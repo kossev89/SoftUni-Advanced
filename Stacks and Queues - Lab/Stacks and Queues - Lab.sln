@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Reverse a String", "1. R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Stack Sum", "2. Stack Sum\2. Stack Sum.csproj", "{3938F39B-9382-4768-A58E-ABE2CED9ED7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Simple Calculator", "3. Simple Calculator\3. Simple Calculator.csproj", "{0AB6FF9B-74DD-4967-B923-B0C17B2CB157}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3938F39B-9382-4768-A58E-ABE2CED9ED7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3938F39B-9382-4768-A58E-ABE2CED9ED7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3938F39B-9382-4768-A58E-ABE2CED9ED7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AB6FF9B-74DD-4967-B923-B0C17B2CB157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AB6FF9B-74DD-4967-B923-B0C17B2CB157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AB6FF9B-74DD-4967-B923-B0C17B2CB157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AB6FF9B-74DD-4967-B923-B0C17B2CB157}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
