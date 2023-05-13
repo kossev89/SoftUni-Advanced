@@ -13,7 +13,7 @@ for (int i = 0; i < input.Length; i++)
     {
         int startIndex = stack.Pop();
         int endIndex = i;
-        int length = endIndex - startIndex +1;
+        int length = endIndex - startIndex + 1;
         StringBuilder.AppendLine(input.Substring(startIndex, length));
     }
 }
