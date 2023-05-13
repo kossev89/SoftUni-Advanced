@@ -21,13 +21,7 @@ if (stack.Contains(elementToFind))
 }
 else if (stack.Count > 0)
 {
-    List<int> list = new List<int>();
-    while (stack.Count > 0)
-    {
-        list.Add(stack.Pop());
-    }
-    list.Sort();
-    Console.WriteLine(list[0]);
+    Console.WriteLine(stack.Min());
 }
 else
 {
