@@ -9,25 +9,17 @@ for (int i = 0; i < elementsToAdd; i++)
 {
     queue.Enqueue(ints[i]);
 }
-
 for (int i = 0; i < elementsToRemove; i++)
 {
     queue.Dequeue();
 }
-
 if (queue.Contains(elementToFind))
 {
     Console.WriteLine("true");
 }
 else if (queue.Count > 0)
 {
-    List<int> list = new List<int>();
-    while (queue.Count > 0)
-    {
-        list.Add(queue.Dequeue());
-    }
-    list.Sort();
-    Console.WriteLine(list[0]);
+    Console.WriteLine(queue.Min());
 }
 else
 {
