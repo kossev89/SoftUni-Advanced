@@ -5,11 +5,12 @@ Console.WriteLine(ordersQueue.Max());
 
 while (ordersQueue.Count > 0)
 {
-    int lastOrder = ordersQueue.Peek();
-    totalFoodQuantity -= ordersQueue.Dequeue();
-    if (totalFoodQuantity < 0)
+    if (totalFoodQuantity >= ordersQueue.Peek())
     {
-        ordersQueue.Enqueue(lastOrder);
+        totalFoodQuantity -= ordersQueue.Dequeue();
+    }
+    else
+    {
         break;
     }
 }
