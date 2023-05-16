@@ -14,6 +14,6 @@ for (int row = 0; row < matrix.GetLength(0); row++)
 int sum = 0;
 for (int row = 0; row < matrixSize; row++)
 {
-    sum += matrix[row,row];
+    sum += matrix[row, row];
 }
 Console.WriteLine(sum);
