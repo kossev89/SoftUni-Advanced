@@ -33,5 +33,4 @@ for (int row = 0; row < rows - 1; row++)
         }
     }
 }
-
 Console.WriteLine(squares);

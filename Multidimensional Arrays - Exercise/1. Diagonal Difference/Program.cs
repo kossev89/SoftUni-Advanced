@@ -19,7 +19,7 @@ int sumSecond = 0;
 for (int i = 0; i < size; i++)
 {
     sumPrime += matrix[i, i];
-    sumSecond += matrix[i, 2 - i];
+    sumSecond += matrix[i, size - 1 - i];
 }
 
 int result = Math.Abs(sumPrime - sumSecond);
