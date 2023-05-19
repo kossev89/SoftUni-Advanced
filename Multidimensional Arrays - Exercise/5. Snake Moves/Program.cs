@@ -44,7 +44,7 @@ static void PrintMatrix(char[,] matrix, int rows, int cols)
     {
         for (int col = 0; col < cols; col++)
         {
-            Console.Write($"{matrix[row, col]} ");
+            Console.Write($"{matrix[row, col]}");
         }
         Console.WriteLine();
     }
