@@ -3,34 +3,33 @@ int ragCapacity = int.Parse(Console.ReadLine());
 Stack<int> stack = new Stack<int>(clothes);
 int ragsUsed = 0;
 int currentSum = 0;
-if (ragCapacity > 0)
-{
-    ragsUsed++;
-}
+
 
 while (stack.Count > 0)
 {
-    currentSum += stack.Peek();
+    var currentCloth = stack.Pop();
+    currentSum += currentCloth;
+
     if (currentSum == ragCapacity)
     {
-        ragsUsed++;
         currentSum = 0;
-        stack.Pop();
+        ragsUsed++;
         continue;
     }
-    else if (currentSum > ragCapacity && ragCapacity > 0)
+    else if (currentSum > ragCapacity)
+    {
+        currentSum = 0;
+        ragsUsed++;
+        stack.Push(currentCloth);
+        continue;
+    }
+    else if (stack.Count == 0)
     {
         ragsUsed++;
-        currentSum = 0;
-        continue;
     }
-    else if (ragCapacity == 0)
-    {
-        ragsUsed++;
-        currentSum = 0;
-        stack.Pop();
-        continue;
-    }
-    stack.Pop();
+}
+if (stack.Count == 0 && ragsUsed == 0)
+{
+    ragsUsed++;
 }
 Console.WriteLine(ragsUsed);
