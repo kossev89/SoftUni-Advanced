@@ -26,7 +26,7 @@ while (command != "END")
                 else
                 {
                     Console.WriteLine("A crash happened!");
-                    Console.WriteLine($"{currentCar} was hit at {currentCar[timeGreen + timeFree]}");
+                    Console.WriteLine($"{currentCar} was hit at {currentCar[timeGreen + timeFree]}.");
                     isCrashed = true;
                     break;
                 }
