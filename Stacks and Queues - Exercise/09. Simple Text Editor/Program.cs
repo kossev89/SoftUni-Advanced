@@ -1,7 +1,8 @@
 ﻿string text = string.Empty;
 int numberOfCommands = int.Parse(Console.ReadLine());
-Stack<char> stack = new();
-Stack<char> undo = new();
+Stack<string> stack = new();
+var undo = new Stack<string>();
+
 
 for (int i = 0; i < numberOfCommands; i++)
 {
@@ -10,35 +11,19 @@ for (int i = 0; i < numberOfCommands; i++)
     switch (command)
     {
         case 1:
-            foreach (var item in stack.Reverse())
-            {
-                undo.Push(item);
-            }
-            foreach (var item in commandArg[1])
-            {
-                stack.Push(item);
-            }
+            undo.Push(text);
+            text += commandArg[1];
+            stack.Push(text);
             break;
         case 2:
-            foreach (var item in stack.Reverse())
-            {
-                undo.Push(item);
-            }
-            for (int j = 0; j < int.Parse(commandArg[1]); j++)
-            {
-                stack.Pop();
-            }
+            undo.Push(text);
+            text = text.Remove(text.Length - int.Parse(commandArg[1]));
             break;
         case 3:
-            text = String.Join("", stack.Reverse());
             Console.WriteLine(text[int.Parse(commandArg[1]) - 1]);
             break;
         case 4:
-            stack.Clear();
-            foreach (var item in undo.Reverse())
-            {
-                stack.Push(item);
-            }
+            text = undo.Pop();
             break;
     }
 }
