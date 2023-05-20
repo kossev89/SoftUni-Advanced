@@ -1,8 +1,6 @@
 ﻿string text = string.Empty;
 int numberOfCommands = int.Parse(Console.ReadLine());
-Stack<string> stack = new();
 var undo = new Stack<string>();
-
 
 for (int i = 0; i < numberOfCommands; i++)
 {
@@ -12,8 +10,7 @@ for (int i = 0; i < numberOfCommands; i++)
     {
         case 1:
             undo.Push(text);
-            text += commandArg[1];
-            stack.Push(text);
+            text += commandArg[1];;
             break;
         case 2:
             undo.Push(text);

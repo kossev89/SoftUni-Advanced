@@ -34,7 +34,7 @@ for (int row = 0; row < rows - 1; row++)
 
 string command = Console.ReadLine();
 
-while (command != "end")
+while (command != "End")
 {
     string[] commandToken = command
         .Split(' ', StringSplitOptions.RemoveEmptyEntries)
@@ -42,20 +42,20 @@ while (command != "end")
     int row = int.Parse(commandToken[1]);
     int col = int.Parse(commandToken[2]);
     int value = int.Parse(commandToken[3]);
-    if (IsValid(matrix, row, col) )
+    if (IsValid(matrix, row, col))
     {
         switch (commandToken[0])
         {
-            case "add":
-                    matrix[row][col] += value;
+            case "Add":
+                matrix[row][col] += value;
                 break;
-            case "subtract":
-                    matrix[row][col] -= value;
+            case "Subtract":
+                matrix[row][col] -= value;
                 break;
             default:
                 break;
         }
-    } 
+    }
     command = Console.ReadLine();
 }
 
@@ -67,9 +67,9 @@ for (int row = 0; row < rows; row++)
 static bool IsValid(int[][] matrix, int row, int col)
 {
     bool IsValid = false;
-    if (row>=0
-        && row<matrix.Length
-        && col>=0
+    if (row >= 0
+        && row < matrix.Length
+        && col >= 0
         && col < matrix[row].Length
         )
     {
