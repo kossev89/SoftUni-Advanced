@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Define a Class Person", "01. Define a Class Person\01. Define a Class Person.csproj", "{FA0523FF-8375-4AFB-BA2E-56D1DFFE0C5F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Define_a_Class_Person", "01. Define a Class Person\01_Define_a_Class_Person.csproj", "{FA0523FF-8375-4AFB-BA2E-56D1DFFE0C5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Creating Constructors", "02. Creating Constructors\02. Creating Constructors.csproj", "{DEE52350-7CD9-4171-B894-A84339B7DB1F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Creating_Constructors", "02. Creating Constructors\02. Creating_Constructors.csproj", "{DEE52350-7CD9-4171-B894-A84339B7DB1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.OldestFamilyMember", "03. Oldest Family Member\03.OldestFamilyMember.csproj", "{6E91AA6A-71F3-4FC1-8DD1-FD638DD74916}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DEE52350-7CD9-4171-B894-A84339B7DB1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEE52350-7CD9-4171-B894-A84339B7DB1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEE52350-7CD9-4171-B894-A84339B7DB1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E91AA6A-71F3-4FC1-8DD1-FD638DD74916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E91AA6A-71F3-4FC1-8DD1-FD638DD74916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E91AA6A-71F3-4FC1-8DD1-FD638DD74916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E91AA6A-71F3-4FC1-8DD1-FD638DD74916}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
