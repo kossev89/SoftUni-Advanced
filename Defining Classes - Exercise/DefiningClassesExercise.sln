@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Define_a_Class_Person", "01. Define a Class Person\01_Define_a_Class_Person.csproj", "{FA0523FF-8375-4AFB-BA2E-56D1DFFE0C5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Define_a_Class_Person", "01. Define a Class Person\01_Define_a_Class_Person.csproj", "{FA0523FF-8375-4AFB-BA2E-56D1DFFE0C5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Creating_Constructors", "02. Creating Constructors\02. Creating_Constructors.csproj", "{DEE52350-7CD9-4171-B894-A84339B7DB1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Creating_Constructors", "02. Creating Constructors\02. Creating_Constructors.csproj", "{DEE52350-7CD9-4171-B894-A84339B7DB1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.OldestFamilyMember", "03. Oldest Family Member\03.OldestFamilyMember.csproj", "{6E91AA6A-71F3-4FC1-8DD1-FD638DD74916}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.OldestFamilyMember", "03. Oldest Family Member\03.OldestFamilyMember.csproj", "{6E91AA6A-71F3-4FC1-8DD1-FD638DD74916}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.OpinionPoll", "04.OpinionPoll\04.OpinionPoll.csproj", "{B1CDC98D-70F1-4A19-8ED9-B6221561F909}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.OpinionPoll", "04.OpinionPoll\04.OpinionPoll.csproj", "{B1CDC98D-70F1-4A19-8ED9-B6221561F909}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.DateModifier", "05.DateModifier\05.DateModifier.csproj", "{7A11FE16-438F-4487-B72D-B1CE562F68FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.DateModifier", "05.DateModifier\05.DateModifier.csproj", "{7A11FE16-438F-4487-B72D-B1CE562F68FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.SpeedRacing", "06.SpeedRacing\06.SpeedRacing.csproj", "{A8CF7290-3FDF-419D-BD6B-6D495816148E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7A11FE16-438F-4487-B72D-B1CE562F68FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A11FE16-438F-4487-B72D-B1CE562F68FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A11FE16-438F-4487-B72D-B1CE562F68FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8CF7290-3FDF-419D-BD6B-6D495816148E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8CF7290-3FDF-419D-BD6B-6D495816148E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8CF7290-3FDF-419D-BD6B-6D495816148E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8CF7290-3FDF-419D-BD6B-6D495816148E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
