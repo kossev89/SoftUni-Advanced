@@ -5,16 +5,16 @@
         static void Main(string[] args)
         {
             int boxesCount = int.Parse(Console.ReadLine());
-            List<Box<string>> boxes = new();
+            List<Box<double>> boxes = new();
 
             for (int i = 0; i < boxesCount; i++)
             {
-                string input = Console.ReadLine();
-                Box<string> box = new Box<string>(input);
+                double input = double.Parse(Console.ReadLine());
+                Box<double> box = new Box<double>(input);
                 boxes.Add(box);
             }
 
-            string elementToComare = Console.ReadLine();
+            double elementToComare = double.Parse(Console.ReadLine());
             int counter = 0;
             foreach (var item in boxes)
             {
