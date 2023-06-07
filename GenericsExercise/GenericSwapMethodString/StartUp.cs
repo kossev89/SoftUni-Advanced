@@ -4,11 +4,11 @@
     {
         static void Main(string[] args)
         {
-            List<string> list = new();
+            List<int> list = new();
             int itemCount = int.Parse(Console.ReadLine());
             for (int i = 0; i < itemCount; i++)
             {
-                list.Add(Console.ReadLine());
+                list.Add(int.Parse(Console.ReadLine()));
             }
             int[] command = Console.ReadLine()
                 .Split(' ', StringSplitOptions.RemoveEmptyEntries)
