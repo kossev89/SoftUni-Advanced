@@ -77,27 +77,27 @@
                     else if (field[newPositionRow, newPositionCol] == "t")
                     {
                         Console.WriteLine("Unfortunately, the squirrel stepped on a trap...");
-                        Console.WriteLine($"Haselnuts collected: {haselnutsCollected}");
+                        Console.WriteLine($"Hazelnuts collected: {haselnutsCollected}");
                         return;
                     }
                 }
                 else
                 {
                     Console.WriteLine("The squirrel is out of the field.");
-                    Console.WriteLine($"Haselnuts collected: {haselnutsCollected}");
+                    Console.WriteLine($"Hazelnuts collected: {haselnutsCollected}");
                     return;
                 }
                 if (haselnutsCollected == 3)
                 {
                     Console.WriteLine("Good job! You have collected all hazelnuts!");
-                    Console.WriteLine($"Haselnuts collected: {haselnutsCollected}");
+                    Console.WriteLine($"Hazelnuts collected: {haselnutsCollected}");
                     return;
                 }
             }
             if (haselnutsCollected < 3)
             {
                 Console.WriteLine("There are more hazelnuts to collect.");
-                Console.WriteLine($"Haselnuts collected: {haselnutsCollected}");
+                Console.WriteLine($"Hazelnuts collected: {haselnutsCollected}");
             }
         }
 
@@ -105,7 +105,7 @@
         {
             bool positionOk = false;
             if (newPositionRow >= 0 && newPositionRow < size
-                && newPositionCol >= 0 && newPositionRow < size
+                && newPositionCol >= 0 && newPositionCol < size
                 )
             {
                 positionOk = true;
