@@ -146,14 +146,6 @@ while (command != "Finish")
         break;
     }
     playground[positionRow, positionCol] = "B";
-    for (int row = 0; row < rows; row++)
-    {
-        for (int col = 0; col < cols; col++)
-        {
-            Console.Write(playground[row, col]);
-        }
-        Console.WriteLine();
-    }
     command = Console.ReadLine();
 }
 Console.WriteLine("Game over!");
