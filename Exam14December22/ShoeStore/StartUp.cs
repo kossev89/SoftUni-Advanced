@@ -21,6 +21,7 @@ namespace ShoeStore
             var shoeTen = new Shoe("Puma", "hiking", 42, "textile");
             var shoeEleven = new Shoe("Skechers", "casual", 42.5, "leather");
 
+
             Console.WriteLine(store.AddShoe(shoeOne));
             // Successfully added running textile pair of shoes to the store.
             Console.WriteLine(store.AddShoe(shoeTwo));

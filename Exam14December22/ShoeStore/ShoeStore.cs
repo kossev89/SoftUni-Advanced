@@ -8,18 +8,19 @@ namespace ShoeStore
 {
     public class ShoeStore
     {
+        private List<Shoe> Shoes;
         public ShoeStore(string name, int capacity)
         {
             Name = name;
             Capacity = capacity;
-            Shoes = new();
+            this.shoes = new List<Shoe>();
         }
 
         public string Name { get; set; }
         public int Capacity { get; set; }
-        private List<Shoe> Shoes { get; set; }
+        
         public int Count { get { return Shoes.Count; } }
-        IReadOnlyCollection<Shoe> shoes => shoes;
+        IReadOnlyCollection<Shoe> Shoes => sShoes;
 
         public string AddShoe(Shoe shoe)
         {
